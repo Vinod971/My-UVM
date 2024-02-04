@@ -1,0 +1,35 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed Jan 31 03:39:02 2024
+[*]
+[dumpfile] "B:\Documents\PreSi_Project\run\async_fifo_TB.vcd"
+[dumpfile_mtime] "Wed Jan 31 02:35:12 2024"
+[dumpfile_size] 13316
+[savefile] "B:\Documents\PreSi_Project\run\asyn.gtkw"
+[timestart] 0
+[size] 2560 1369
+[pos] -139 -139
+*-4.627193 268 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 159
+[sst_expanded] 0
+[sst_vpaned_height] 423
+@28
+async_fifo_TB.wclk
+async_fifo_TB.w_en
+async_fifo_TB.wrst_n
+@22
+async_fifo_TB.data_in[7:0]
+@28
+async_fifo_TB.full
+@200
+-
+@28
+async_fifo_TB.rclk
+async_fifo_TB.r_en
+@22
+#{async_fifo_TB.data_out[7:0]} async_fifo_TB.data_out[7] async_fifo_TB.data_out[6] async_fifo_TB.data_out[5] async_fifo_TB.data_out[4] async_fifo_TB.data_out[3] async_fifo_TB.data_out[2] async_fifo_TB.data_out[1] async_fifo_TB.data_out[0]
+@28
+async_fifo_TB.empty
+[pattern_trace] 1
+[pattern_trace] 0
