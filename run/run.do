@@ -4,6 +4,8 @@ vlog ../src/fifo_mem.sv
 vlog ../src/rptr_handler_updated.sv
 vlog ../src/synchronizer.sv
 vlog ../src/wptr_handler.sv
+vlog ../src/transaction.sv
+vlog ../src/generator.sv
 vlog ../src/top.sv
 
 vlog ../src/testbench.sv
