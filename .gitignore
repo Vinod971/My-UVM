@@ -1,3 +1,5 @@
 run/work/
 run/transcript
-run/async_fifo_TB.vcd
+run/*.vcd
+run/*.ucdb
+run/*.wlf
