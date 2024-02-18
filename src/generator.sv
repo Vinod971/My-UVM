@@ -3,26 +3,30 @@ class generator;
   rand transcation trans;
   mailbox gtd;
   int repeat_count;
-  event dtg;
-
-  function new( mailbox gtd, event dtg);
+  event ended;
+  int repeat_gen = 0;
+ 
+  function new( mailbox gtd, event ended);
     this.gtd = gtd;
-    this.dtg = dtg;  
+    this.ended = ended;  
   endfunction
   
 
   task write();
-    int K;
+  int Temp1;
+  int Temp2 = 1;
    repeat(repeat_count) begin
     repeat(512)begin  
     trans = new();
-    K = (trans.randomize());
-    $display("[Generator] Data_In=%d",trans.data_in);
+    Temp1 = (trans.randomize());
+    if(Temp2==1) $display("[Generator] Brust_id=%d >>Data_In=%d",Temp2,trans.data_in);
     gtd.put(trans);
-   end 
+    repeat_gen++;
+    end 
+    Temp2 = Temp2+1; 
   end
-
-  #100000 $finish;
+   -> ended;
+  #2055 $finish;
   endtask
 
 endclass
