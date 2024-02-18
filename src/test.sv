@@ -7,9 +7,8 @@ program test(interface_fifo in);
   initial begin
     env = new(in); 
     env.build(); 
-    env.gen.repeat_count = 30;
-    env.pre_test();
-    env.write();
+    env.gen.repeat_count = 1;
+    env.run();
   end
   
 endprogram

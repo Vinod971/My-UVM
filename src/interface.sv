@@ -7,4 +7,16 @@ interface interface_fifo;
   logic [DATA_WIDTH-1:0] data_out;
   logic full, empty, write_error, read_error;
 
+    
+  clocking moni@(posedge wclk or posedge rclk);
+    input wclk,rclk;
+    input r_en;
+    input w_en;
+    input data_in;
+    input data_out;
+    input full,empty;
+  endclocking
+  
+    modport MON (clocking moni);
+
 endinterface 

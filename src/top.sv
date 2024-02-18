@@ -26,3 +26,7 @@ module asynchronous_fifo #(parameter DEPTH=256, DATA_WIDTH=8, parameter PTR_WIDT
   fifo_mem fifom(wclk, w_en, rclk, r_en,b_wptr, b_rptr, data_in,full,empty, data_out, write_error, read_error);
 
 endmodule
+
+
+
+
