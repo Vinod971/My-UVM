@@ -1,7 +1,8 @@
+`include "fifo_mem.sv"
+`include "rptr_handler_updated.sv"
 `include "synchronizer.sv"
 `include "wptr_handler.sv"
-`include "rptr_handler_updated.sv"
-`include "fifo_mem.sv"
+
 
 module asynchronous_fifo #(parameter DEPTH=256, DATA_WIDTH=8, parameter PTR_WIDTH = 8) (
   input wclk, wrst_n,
