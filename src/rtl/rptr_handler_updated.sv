@@ -7,7 +7,8 @@ module rptr_handler #(parameter PTR_WIDTH=8) (
 
   reg [PTR_WIDTH:0] b_rptr_next;
   reg [PTR_WIDTH:0] g_rptr_next;
-
+  reg rempty;
+  
   assign b_rptr_next = b_rptr + (r_en & !empty); // Update based on counter
   assign g_rptr_next = (b_rptr_next >> 1) ^ b_rptr_next;
   assign rempty = (g_wptr_sync == g_rptr_next);
