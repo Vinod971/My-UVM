@@ -21,6 +21,7 @@ class read_drv extends uvm_driver#(read_tx);
    end
  endtask
 
+ //Driving imports to the DUT and geting outputs from the DUT
 task drive_tx(read_tx tx);
 		 @(posedge inf.rclk);
 		 inf.r_en =1;
